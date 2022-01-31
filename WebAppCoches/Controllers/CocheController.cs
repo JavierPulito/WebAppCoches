@@ -30,20 +30,20 @@ namespace WebAppCoches.Controllers
 
         [HttpGet]
         [Route("/{id}")]
-        public CocheModel GetPersona(int id)
+        public CocheModel GetCoche(int id)
         {
             return CocheRepositorio.FindId(id);
         }
 
         [HttpDelete]
         [Route("/{id}")]
-        public void DeletePersona(int id)
+        public void DeleteCoche(int id)
         {
             CocheRepositorio.Delete(id);
         }
 
         [HttpPut]
-        public void UpdateEdadPersona(int id, bool estado, string color, bool movimiento)
+        public void UpdateCoche(int id, bool estado, string color, bool movimiento)
         {
             CocheRepositorio.UpdateValues(id, estado, color, movimiento);
         }

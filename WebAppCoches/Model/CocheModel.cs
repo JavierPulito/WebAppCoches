@@ -10,13 +10,14 @@
 
         public RuedaModel Rueda { get; set; }
 
-        public CocheModel(int id, bool estado, string color, RuedaModel rueda)
-        {
-            this.Id = id;
-            this.Estado = estado;
-            this.Color = color;
-            this.Rueda = rueda;
-        }
+
+        //public CocheModel(int id, bool estado, string color, RuedaModel rueda)
+        //{
+        //    this.Id = id;
+        //    this.Estado = estado;
+        //    this.Color = color;
+        //    this.Rueda = rueda;
+        //}
 
     }
 }
